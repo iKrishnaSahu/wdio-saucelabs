@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2019",
+    "lib": [
+      "es2019",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "@wdio/globals/types",
+      "expect-webdriverio",
+      "@wdio/mocha-framework"
+    ],
+    "noEmit": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "test/**/*.ts",
+    "wdio.conf.ts"
+  ]
+}
