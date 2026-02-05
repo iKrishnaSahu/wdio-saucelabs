@@ -13,7 +13,10 @@
     "test:sauce:safari": "SAUCE_BROWSER_NAME=safari SAUCE_PLATFORM_NAME='macOS 13' npm run test:sauce",
     "test:sauce:android": "SAUCE_DEVICE_NAME='Google Pixel 6 Pro GoogleAPI Emulator' SAUCE_PLATFORM_NAME='Android' SAUCE_PLATFORM_VERSION='16.0' SAUCE_BROWSER_NAME='Chrome' npm run test:sauce",
     "test:sauce:ios": "SAUCE_DEVICE_NAME='iPhone 16 Pro Simulator' SAUCE_PLATFORM_NAME='iOS' SAUCE_PLATFORM_VERSION='16.2' SAUCE_BROWSER_NAME='Safari' npm run test:sauce",
-    "test:programmatic": "ts-node trigger-wdio.ts"
+    "test:programmatic": "ts-node trigger-wdio.ts",
+    "test:sauce:s23fe": "SAUCE_PLATFORM_NAME=Android SAUCE_BROWSER_NAME=Chrome SAUCE_DEVICE_NAME='Samsung Galaxy S23 FE' npm run wdio:sauce:real",
+    "test:sauce:iphone15": "SAUCE_PLATFORM_NAME=iOS SAUCE_BROWSER_NAME=Safari SAUCE_DEVICE_NAME='iPhone 15' npm run wdio:sauce:real",
+    "wdio:sauce:real": "wdio run wdio.sauce.real.conf.ts"
   },
   "keywords": [
     "wdio",
