@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 dotenv.config()
-import { config as sharedConfig } from './wdio.shared.conf'
+import { config as sharedConfig } from './wdio.shared.conf.ts'
 
 // Construct capabilities based on environment variables
 const isMobile = !!process.env.SAUCE_DEVICE_NAME;

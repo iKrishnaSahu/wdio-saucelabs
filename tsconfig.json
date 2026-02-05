@@ -14,10 +14,12 @@
       "@wdio/mocha-framework"
     ],
     "noEmit": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
   },
   "include": [
     "test/**/*.ts",
-    "wdio.conf.ts"
+    "wdio.*.conf.ts",
+    "trigger-wdio.ts"
   ]
 }

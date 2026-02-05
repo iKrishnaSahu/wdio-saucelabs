@@ -12,7 +12,8 @@
     "test:sauce:edge": "SAUCE_BROWSER_NAME=microsoftedge SAUCE_PLATFORM_NAME='Windows 11' npm run test:sauce",
     "test:sauce:safari": "SAUCE_BROWSER_NAME=safari SAUCE_PLATFORM_NAME='macOS 13' npm run test:sauce",
     "test:sauce:android": "SAUCE_DEVICE_NAME='Google Pixel 6 Pro GoogleAPI Emulator' SAUCE_PLATFORM_NAME='Android' SAUCE_PLATFORM_VERSION='16.0' SAUCE_BROWSER_NAME='Chrome' npm run test:sauce",
-    "test:sauce:ios": "SAUCE_DEVICE_NAME='iPhone 16 Pro Simulator' SAUCE_PLATFORM_NAME='iOS' SAUCE_PLATFORM_VERSION='16.2' SAUCE_BROWSER_NAME='Safari' npm run test:sauce"
+    "test:sauce:ios": "SAUCE_DEVICE_NAME='iPhone 16 Pro Simulator' SAUCE_PLATFORM_NAME='iOS' SAUCE_PLATFORM_VERSION='16.2' SAUCE_BROWSER_NAME='Safari' npm run test:sauce",
+    "test:programmatic": "ts-node trigger-wdio.ts"
   },
   "keywords": [
     "wdio",
